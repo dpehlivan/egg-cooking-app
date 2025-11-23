@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Egg Boiling Timer</title>
+
+    <!-- Correct way to load static files in Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='timer.css') }}">
+    <script src="{{ url_for('static', filename='egg_timer.js') }}"></script>
+</head>
+
+<body onload="startTimer({{ seconds }})">
+    <h1>{{ egg_type|capitalize }} Egg Boiling Countdown</h1>
+    <h2 id="countdown"></h2>
+</body>
+</html>

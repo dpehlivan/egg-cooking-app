@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A guide to cook an egg</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    <body>
+        <h1>How would you like your egg cooked today?</h1>
+
+        <form method="post">
+        <label>
+            <input type="radio" name="egg_type" value="runny" required> Runny boiled Egg
+
+        </label><br>
+
+        <label>
+            <input type="radio" name="egg_type" value="soft" required> Soft Boiled Egg
+        </label><br>
+
+        <label>
+            <input type="radio" name="egg_type" value="medium" required> Medium Boiled Egg
+        </label><br>
+
+        <label>
+            <input type="radio" name="egg_type" value="hard" required> Hard Boiled Egg
+        </label><br><br>
+
+        <button type="submit">Boil the Egg!</button>
+
+      </form>
+    </body>
+</html>
